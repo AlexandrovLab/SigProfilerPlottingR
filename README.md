@@ -1,10 +1,11 @@
-[![Docs](https://img.shields.io/badge/docs-latest-blue.svg)](https://osf.io/2aj6t/wiki/home/) [![License](https://img.shields.io/badge/License-BSD\%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause) [![Build Status](https://travis-ci.com/AlexandrovLab/SigProfilerPlottingR.svg?branch=master)](https://travis-ci.com/AlexandrovLab/SigProfilerPlottingR.svg?branch=master)
+[![Docs](https://img.shields.io/badge/docs-latest-blue.svg)](https://osf.io/2aj6t/wiki/home/) [![License](https://img.shields.io/badge/License-BSD\%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause) [![Build Status](https://travis-ci.com/AlexandrovLab/SigProfilerPlottingR.svg?branch=master)](https://travis-ci.com/AlexandrovLab/SigProfilerPlottingR)
 
 # SigProfilerPlottingR
 An R wrapper for running the SigProfilerPlotting framework.
+
 **INTRODUCTION**
 
-The purpose of this document is to provide a guide for using the SigProfilerPlotting framework and associated functions/tools to visualize the output from SigProfilerExtraction and SigProfilerSimulator. An extensive Wiki page detailing the usage of this tool can be found at https://osf.io/2aj6t/wiki/home.
+The purpose of this document is to provide a guide for using the SigProfilerPlotting framework and associated functions/tools to visualize the output from SigProfilerExtraction and SigProfilerSimulator. An extensive Wiki page detailing the usage of this tool can be found at https://osf.io/2aj6t/wiki/home. For users that prefer working in a Python environment, the tool is written in Python and can be found and installed from: 
 
 **PREREQUISITES**
 
