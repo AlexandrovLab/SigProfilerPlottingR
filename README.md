@@ -7,6 +7,8 @@ An R wrapper for running the SigProfilerPlotting framework.
 
 The purpose of this document is to provide a guide for using the SigProfilerPlotting framework and associated functions/tools to visualize the output from SigProfilerExtraction and SigProfilerSimulator. An extensive Wiki page detailing the usage of this tool can be found at https://osf.io/2aj6t/wiki/home. For users that prefer working in a Python environment, the tool is written in Python and can be found and installed from: https://github.com/AlexandrovLab/SigProfilerPlotting
 
+![schematic](schematic.png)
+
 **PREREQUISITES**
 
 devtools  (R) 
