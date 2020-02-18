@@ -5,7 +5,7 @@ An R wrapper for running the SigProfilerPlotting framework.
 
 **INTRODUCTION**
 
-The purpose of this document is to provide a guide for using the SigProfilerPlotting framework and associated functions/tools to visualize the output from SigProfilerExtraction and SigProfilerSimulator. An extensive Wiki page detailing the usage of this tool can be found at https://osf.io/2aj6t/wiki/home. For users that prefer working in a Python environment, the tool is written in Python and can be found and installed from: 
+The purpose of this document is to provide a guide for using the SigProfilerPlotting framework and associated functions/tools to visualize the output from SigProfilerExtraction and SigProfilerSimulator. An extensive Wiki page detailing the usage of this tool can be found at https://osf.io/2aj6t/wiki/home. For users that prefer working in a Python environment, the tool is written in Python and can be found and installed from: https://github.com/AlexandrovLab/SigProfilerPlotting
 
 **PREREQUISITES**
 
@@ -77,11 +77,12 @@ To create a sample portrait, ensure that you have a matrix for all required cont
 
 **CITATION**
 
-E.N. Bergstrom, M.N. Huang, U. Mahto, M. Barnes, M.R. Stratton, S.G. Rozen, and L.B. Alexandrov (2019) SigProfilerMatrixGenerator: a tool for visualizing and exploring patterns of small mutational events. https://www.biorxiv.org/content/10.1101/653097v1
+Bergstrom EN, Huang MN, Mahto U, Barnes M, Stratton MR, Rozen SG, Alexandrov LB: SigProfilerMatrixGenerator: a tool for visualizing and exploring patterns of small mutational events. BMC Genomics 2019, 20:685
+https://bmcgenomics.biomedcentral.com/articles/10.1186/s12864-019-6041-2
 
 **COPYRIGHT**
 
-Copyright (c) 2019, Erik Bergstrom [Alexandrov Lab] All rights reserved.
+Copyright (c) 2020, Erik Bergstrom [Alexandrov Lab] All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
