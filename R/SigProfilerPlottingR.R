@@ -1,60 +1,73 @@
-#' @title
+#' @title Plot SBS profiles
 #'
-#' @description
+#' @description Generates plots for Single Base Substitutions (SBS).
 #'
-#' @param
-#'
-#' @return
-#'
-#' @examples
-#'
-#' @export plotSBS
-
-plotSBS <- function(matrix_path, output_path, project, plot_type, percentage=FALSE) {
+#' @export
+plotSBS <- function(matrix_path, output_path, project, plot_type, percentage = FALSE, custom_text_upper = NULL, custom_text_middle = NULL, custom_text_bottom = NULL, savefig_format = "pdf", volume = NULL, dpi = 100) {
   os <- reticulate::import("os")
   sys <- reticulate::import("sys")
   sigPlt <- reticulate::import("sigProfilerPlotting")
-  sigPlt$plotSBS(matrix_path, output_path, project, plot_type, percentage)
+  sigPlt$plotSBS(matrix_path, output_path, project, plot_type, percentage, custom_text_upper, custom_text_middle, custom_text_bottom, savefig_format, volume, dpi)
   sys$stdout$flush()
 }
 
-#' @export plotDBS
-plotDBS <- function(matrix_path, output_path, project, plot_type, percentage=FALSE) {
+#' @title Plot DBS profiles
+#'
+#' @description Generates plots for Doublet Base Substitutions (DBS).
+#'
+#' @export
+plotDBS <- function(matrix_path, output_path, project, plot_type, percentage = FALSE, custom_text_upper = NULL, custom_text_middle = NULL, custom_text_bottom = NULL, savefig_format = "pdf", volume = NULL, dpi = 100) {
   os <- reticulate::import("os")
   sys <- reticulate::import("sys")
   sigPlt <- reticulate::import("sigProfilerPlotting")
-  sigPlt$plotDBS(matrix_path, output_path, project, plot_type, percentage)
+  sigPlt$plotDBS(matrix_path, output_path, project, plot_type, percentage, custom_text_upper, custom_text_middle, custom_text_bottom, savefig_format, volume, dpi)
   sys$stdout$flush()
 }
 
-#' @export plotID
-plotID <- function(matrix_path, output_path, project, plot_type, percentage=FALSE) {
+#' @title Plot ID profiles
+#'
+#' @description Generates plots for IDs (Insertion and Deletion).
+#'
+#' @export
+plotID <- function(matrix_path, output_path, project, plot_type, percentage = FALSE, custom_text_upper = NULL, custom_text_middle = NULL, custom_text_bottom = NULL, savefig_format = "pdf", volume = NULL, dpi = 100) {
   os <- reticulate::import("os")
   sys <- reticulate::import("sys")
   sigPlt <- reticulate::import("sigProfilerPlotting")
-  sigPlt$plotID(matrix_path, output_path, project, plot_type, percentage)
+  sigPlt$plotID(matrix_path, output_path, project, plot_type, percentage, custom_text_upper, custom_text_middle, custom_text_bottom, savefig_format, volume, dpi)
   sys$stdout$flush()
 }
 
-#' @export plotCNV
-plotCNV <- function(matrix_path, output_path, project, percentage=FALSE, savefig_format="pdf", dpi=100) {
+#' @title Plot CNV profiles
+#'
+#' @description Generates plots for Copy Number Variation (CNV).
+#'
+#' @export
+plotCNV <- function(matrix_path, output_path, project, percentage = FALSE, aggregate = FALSE, read_from_file = TRUE, savefig_format = "pdf", dpi = 100) {
   os <- reticulate::import("os")
   sys <- reticulate::import("sys")
   sigPlt <- reticulate::import("sigProfilerPlotting")
-  sigPlt$plotCNV(matrix_path, output_path, project, percentage)
+  sigPlt$plotCNV(matrix_path, output_path, project, percentage, aggregate, read_from_file, savefig_format, dpi)
   sys$stdout$flush()
 }
 
-#' @export plotSV
-plotSV <- function(matrix_path, output_path, project, percentage=FALSE, savefig_format="pdf", dpi=10) {
+#' @title Plot SV profiles
+#'
+#' @description Generates plots for Structural Variants (SV).
+#'
+#' @export
+plotSV <- function(matrix_path, output_path, project, percentage = FALSE, aggregate = FALSE, savefig_format = "pdf", dpi = 100) {
   os <- reticulate::import("os")
   sys <- reticulate::import("sys")
   sigPlt <- reticulate::import("sigProfilerPlotting")
-  sigPlt$plotSV(matrix_path, output_path, project, percentage)
+  sigPlt$plotSV(matrix_path, output_path, project, percentage, aggregate, savefig_format, dpi)
   sys$stdout$flush()
 }
 
-#' @export samplePortrait
+#' @title Plot a sample portrait
+#'
+#' @description Generates a sample portrait.
+#'
+#' @export
 samplePortrait <- function(sample_matrices_path, output_path, project, percentage=FALSE){
   os <- reticulate::import("os")
   sys <- reticulate::import("sys")
