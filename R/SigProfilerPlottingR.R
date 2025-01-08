@@ -36,6 +36,24 @@ plotID <- function(matrix_path, output_path, project, plot_type, percentage=FALS
   sys$stdout$flush()
 }
 
+#' @export plotCNV
+plotCNV <- function(matrix_path, output_path, project, percentage=FALSE, savefig_format="pdf", dpi=100) {
+  os <- reticulate::import("os")
+  sys <- reticulate::import("sys")
+  sigPlt <- reticulate::import("sigProfilerPlotting")
+  sigPlt$plotCNV(matrix_path, output_path, project, percentage)
+  sys$stdout$flush()
+}
+
+#' @export plotSV
+plotSV <- function(matrix_path, output_path, project, percentage=FALSE, savefig_format="pdf", dpi=10) {
+  os <- reticulate::import("os")
+  sys <- reticulate::import("sys")
+  sigPlt <- reticulate::import("sigProfilerPlotting")
+  sigPlt$plotSV(matrix_path, output_path, project, percentage)
+  sys$stdout$flush()
+}
+
 #' @export samplePortrait
 samplePortrait <- function(sample_matrices_path, output_path, project, percentage=FALSE){
   os <- reticulate::import("os")
