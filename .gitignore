@@ -1,4 +1,24 @@
+# RStudio files
 .Rproj.user
 .Rhistory
 .RData
 .Ruserdata
+
+# Common IDE folders
+.idea/
+.vscode/
+
+# macOS-specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows-specific files
+Thumbs.db
+Desktop.ini
+
+# Python-related files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd

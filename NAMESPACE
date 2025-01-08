@@ -1,6 +1,8 @@
 export(plotSBS)
 export(plotDBS)
 export(plotID)
+export(plotCNV)
+export(plotSV)
 export(samplePortrait)
 import(devtools)
 import(reticulate)
